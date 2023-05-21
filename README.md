@@ -1,6 +1,7 @@
 **Portfolio**
 
-**Description **:
+**Description**:
+
 This project is a portfolio website built using Next.js, Chakra UI, and Framer Motion. It showcases my work, skills, and experiences in a visually appealing and interactive manner.
 
 **Table of Contents**
@@ -26,12 +27,15 @@ This project is a portfolio website built using Next.js, Chakra UI, and Framer M
 - Framer Motion: A motion library for creating fluid and engaging animations in React applications.
 
 **Installation**
+
 Clone the repository: git clone
 Install the dependencies: npm install
 
 **Usage**
+
 Start the development server: npm run dev
 Open your browser and visit http://localhost:3000
 
 **Acknowledgments**
+
 I would like to express my gratitude to Takuya Matsuyama for his valuable guidance and inspiration. I learned a lot from his YouTube video titled "How to build a portfolio website using Next.js, Chakra UI, Framer Motion adn Three.js." His tutorial provided me with insights and knowledge that greatly influenced the development of this portfolio project.
