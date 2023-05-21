@@ -91,7 +91,7 @@ const Navbar = props => {
             />
           </Link>
           <Link
-            href="linkedin.com/in/alin-bogdan-visan-6b9986160"
+            href="https://linkedin.com/in/alin-bogdan-visan-6b9986160"
             target="_blank"
           >
             <IconButton
