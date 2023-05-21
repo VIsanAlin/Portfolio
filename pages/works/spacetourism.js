@@ -12,9 +12,18 @@ const Work = () => {
           Space Tourism <Badge>2023</Badge>
         </Title>
         <P>
-          A Website for travelling to some destinations in space. We have a home
-          page, destionations with how long the trip is, the crew and some
-          technologies used to make it possible
+          Embark on a celestial journey like no other with our Space Tourism
+          website. Experience the wonders of outer space and indulge in the
+          thrill of interstellar exploration. Our website offers a captivating
+          platform for space enthusiasts, adventurers, and dreamers alike,
+          providing a gateway to discover and learn about the vast mysteries of
+          the universe. Immerse yourself in breathtaking imagery, informative
+          articles, and interactive features that showcase the wonders of
+          distant planets, cosmic phenomena, and future space travel endeavors.
+          Whether you're seeking inspiration, expanding your knowledge, or
+          simply yearning for an out-of-this-world experience, our Space Tourism
+          website invites you to embark on an extraordinary voyage that
+          transcends the boundaries of Earth and ignites the imagination.
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -33,7 +42,10 @@ const Work = () => {
             <span>React/Tailwind/Typescript</span>
           </ListItem>
         </List>
-        <WorkImage src="/images/thumbnailSpaceTourism.png" alt="SpaceTourism" />
+        <WorkImage
+          src="/images/projects/thumbnailSpaceTourism.png"
+          alt="SpaceTourism"
+        />
       </Container>
     </Layout>
   )

@@ -5,14 +5,18 @@ import {
   Heading,
   Image,
   Link,
+  List,
   Button,
-  useColorModeValue
+  Icon,
+  useColorModeValue,
+  ListItem
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -101,6 +105,39 @@ const Page = () => {
             Hobbies
           </Heading>
           <Paragraph>Escape room, Basketball, Ice skating, Travel</Paragraph>
+        </Section>
+
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            Links
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/VIsanAlin" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  VIsanAlin
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="linkedin.com/in/alin-bogdan-visan-6b9986160"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Visan Alin Bogdan
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
