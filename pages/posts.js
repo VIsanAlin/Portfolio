@@ -8,6 +8,8 @@ import thumbWeatherApp from '../public/images/projects/thumbnailWeatherApp.png'
 import thumbNews from '../public/images/projects/thumbnailNewsHomepage.jpg'
 import thumbMultiForm from '../public/images/projects/thumbnailMultiForm.png'
 import thumbCountryApp from '../public/images/projects/thumbnailCountryAPP.jpg'
+import thumbPixelPulse from '../public/images/projects/thumbnailPixelPulse.png'
+import thumbShowcaseCraft from '../public/images/projects/thumbnailShowcaseCraft.png'
 
 import thumbStore from '../public/images/projects/thumbnailStore.png'
 import thumbOnepage from '../public/images/projects/thumbnailOnepage.png'
@@ -37,9 +39,9 @@ const Posts = () => (
           ></GridItem>
 
           <GridItem
-            title="MultiForm"
-            thumbnail={thumbMultiForm}
-            href="https://github.com/VIsanAlin/MultiStepForm"
+            title="GamingPlatform"
+            thumbnail={thumbPixelPulse}
+            href="https://gaming-platform-tawny.vercel.app"
           ></GridItem>
         </SimpleGrid>
       </Section>
@@ -54,9 +56,19 @@ const Posts = () => (
           href="https://github.com/VIsanAlin/WeatherApp"
         ></GridItem>
         <GridItem
+          title="ShowcaseCraft"
+          thumbnail={thumbShowcaseCraft}
+          href="https://github.com/VIsanAlin/ShowcaseCraft"
+        ></GridItem>
+        <GridItem
           title="NewsHomepage"
           thumbnail={thumbNews}
-          href="https://github.com/VIsanAlin/NewsHomepage/tree/main/news-homepage-main"
+          href="https://github.com/VIsanAlin/NewsHomepage"
+        ></GridItem>
+        <GridItem
+          title="MultiForm"
+          thumbnail={thumbMultiForm}
+          href="https://github.com/VIsanAlin/MultiStepForm"
         ></GridItem>
       </SimpleGrid>
       <SimpleGrid columns={[1, 1, 1]} gap={6}>

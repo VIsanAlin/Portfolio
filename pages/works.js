@@ -8,6 +8,9 @@ import thumbWeatherApp from '../public/images/projects/thumbnailWeatherApp.png'
 import thumbNews from '../public/images/projects/thumbnailNewsHomepage.jpg'
 import thumbMultiForm from '../public/images/projects/thumbnailMultiForm.png'
 
+import thumbPixelPulse from '../public/images/projects/thumbnailPixelPulse.png'
+import thumbShowcaseCraft from '../public/images/projects/thumbnailShowcaseCraft.png'
+
 import thumbStore from '../public/images/projects/thumbnailStore.png'
 import thumbOnepage from '../public/images/projects/thumbnailOnepage.png'
 import thumbBoostrap from '../public/images/projects/thumbnailBootstrapShop.png'
@@ -21,6 +24,26 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="showcasecraft"
+              title="ShowcaseCraft"
+              thumbnail={thumbShowcaseCraft}
+            >
+              A small web application that lets manage the list of showcased
+              works for a digital worker.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="pixexlpulse"
+              title="PixelPulse"
+              thumbnail={thumbPixelPulse}
+            >
+              A gaming platform / website where you can buy keys for games on
+              different platforms.
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="spacetourism"

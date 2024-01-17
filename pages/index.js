@@ -29,7 +29,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a front-end developer based in Romania
+          🚀 Frontend Developer | 💻 UI/UX Enthusiast
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -61,17 +61,25 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About me
           </Heading>
-          <Paragraph>
-            I am aspiring to become a good front-end developer. I am currently
-            finishing my courses at Link Academy and creating different projects
-            based on the knowledge i gathered from these courses. All my
-            projects can be viewed, in the Works tab like :{' '}
-            <Link as={NextLink} href="/works/spacetourism">
-              Space Tourism
-            </Link>
-            .
+          <Paragraph fontSize="md" mb={4}>
+            Passionate about crafting exceptional user experiences, I specialize
+            in building responsive and performant web applications using
+            cutting-edge technologies.
+          </Paragraph>
+          <Paragraph fontSize="md" mb={4}>
+            My journey in web development began 3 years ago, and since then,
+            I've had the privilege of working on diverse projects. I thrive on
+            challenges and am always eager to learn new tools and techniques.
+          </Paragraph>
+          <Paragraph fontSize="md" mb={4}>
+            🎓 Graduated with a degree in [Your Degree] | 📍 Based in [Your
+            Location]
+          </Paragraph>
+          <Paragraph fontSize="md" mb={4}>
+            When I'm not coding, you can find me exploring the latest design
+            trends.
           </Paragraph>
           <Box align="center" my={4}>
             <Link as={NextLink} href="/works">
@@ -95,8 +103,8 @@ const Page = () => {
             Started working for Allview as a Software Developer
           </BioSection>
           <BioSection>
-            <BioYear>2022</BioYear>
-            Started taking courses to improve my front-end developer skills
+            <BioYear>2022-2023</BioYear>
+            Course to improve my frontend skills at Link Academy
           </BioSection>
         </Section>
 
