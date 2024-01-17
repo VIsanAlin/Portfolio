@@ -57,8 +57,8 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
-        wrawp="wrap"
+        maxW="container.xl"
+        wrap="wrap"
         align="center"
         justify="space-between"
       >
@@ -68,9 +68,9 @@ const Navbar = props => {
           </Heading>
         </Flex>
         <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full', md: 'auto' }}
+          direction={{ base: 'column', md: 'row', lg: 'row', xl: 'row' }}
+          display={{ base: 'none', md: 'flex', lg: 'flex', xl: 'flex' }}
+          width={{ base: 'full', md: 'auto', lg: 'auto', xl: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
@@ -101,7 +101,15 @@ const Navbar = props => {
             />
           </Link>
           <ThemeToggleButton />
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Box
+            ml={2}
+            display={{
+              base: 'inline-block',
+              md: 'none',
+              lg: 'none',
+              xl: 'none'
+            }}
+          >
             <Menu>
               <MenuButton
                 as={IconButton}

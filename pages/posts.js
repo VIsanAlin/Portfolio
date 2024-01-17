@@ -17,12 +17,14 @@ import thumbBoostrap from '../public/images/projects/thumbnailBootstrapShop.png'
 
 const Posts = () => (
   <Layout title="Posts">
-    <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+    <Container
+      maxW={{ base: 'container.md', md: 'container.lg', lg: 'container.xl' }}
+    >
+      <Heading as="h3" fontSize={{ base: 18, md: 20 }} mb={4}>
         Next Projects
       </Heading>
       <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={{ base: 4, md: 6 }}>
           <GridItem title="CountryApp" thumbnail={thumbCountryApp}></GridItem>
         </SimpleGrid>
       </Section>
@@ -31,7 +33,7 @@ const Posts = () => (
         Work in Progress
       </Heading>
       <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 2, 2]} gap={{ base: 4, md: 6 }}>
           <GridItem
             title="SpaceTourism"
             thumbnail={thumbSpaceTourism}
@@ -51,15 +53,16 @@ const Posts = () => (
       </Heading>
       <SimpleGrid columns={[1, 2, 2]} gap={6} mb={4}>
         <GridItem
-          title="WeatherApp"
-          thumbnail={thumbWeatherApp}
-          href="https://github.com/VIsanAlin/WeatherApp"
-        ></GridItem>
-        <GridItem
           title="ShowcaseCraft"
           thumbnail={thumbShowcaseCraft}
           href="https://github.com/VIsanAlin/ShowcaseCraft"
         ></GridItem>
+        <GridItem
+          title="WeatherApp"
+          thumbnail={thumbWeatherApp}
+          href="https://github.com/VIsanAlin/WeatherApp"
+        ></GridItem>
+
         <GridItem
           title="NewsHomepage"
           thumbnail={thumbNews}

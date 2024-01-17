@@ -1,4 +1,12 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  SimpleGrid,
+  ListItem
+} from '@chakra-ui/react'
+import Section from '../../components/section'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -7,7 +15,9 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="WeatherApp">
-      <Container>
+      <Container
+        maxW={{ base: 'container.md', md: 'container.lg', lg: 'container.xl' }}
+      >
         <Title>
           WeatherApp <Badge>2023</Badge>
         </Title>
@@ -37,26 +47,30 @@ const Work = () => {
         </P>
 
         <List ml={4} my={4}>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Source Code</Meta>
             <Link href="https://github.com/VIsanAlin/WeatherApp">
               https://github.com/VIsanAlin/WeatherApp{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Platform</Meta>
             <span>Mobile/Tablet/Display</span>
           </ListItem>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Stack</Meta>
             <span>React/Tailwind/WeatherAPI</span>
           </ListItem>
         </List>
-        <WorkImage
-          src="/images/projects/thumbnailWeatherApp.png"
-          alt="WeatherApp"
-        />
+        <SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
+          <Section>
+            <WorkImage
+              src="/images/projects/thumbnailWeatherApp.png"
+              alt="WeatherApp"
+            />
+          </Section>
+        </SimpleGrid>
       </Container>
     </Layout>
   )

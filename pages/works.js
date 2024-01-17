@@ -18,12 +18,14 @@ import thumbBoostrap from '../public/images/projects/thumbnailBootstrapShop.png'
 const Works = () => {
   return (
     <Layout>
-      <Container>
+      <Container
+        maxW={{ base: 'container.md', md: 'container.lg', lg: 'container.xl' }}
+      >
         <Heading as="h3" fontSize={20} mb={4}>
           Personal projects
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2, 3]} gap={6}>
           <Section>
             <WorkGridItem
               id="showcasecraft"
@@ -36,7 +38,7 @@ const Works = () => {
           </Section>
           <Section>
             <WorkGridItem
-              id="pixexlpulse"
+              id="pixelpulse"
               title="PixelPulse"
               thumbnail={thumbPixelPulse}
             >
@@ -85,7 +87,7 @@ const Works = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Link Academy Projects{' '}
         </Heading>
-        <SimpleGrid column={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1, 3]} gap={6}>
           <Section>
             <WorkGridItem id="store" title="Store" thumbnail={thumbStore}>
               A store with a few functionalities developed as a challenge.

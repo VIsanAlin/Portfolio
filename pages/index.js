@@ -21,17 +21,20 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container
+        maxW={{ base: 'container.md', md: 'container.lg', lg: 'container.xl' }}
+      >
         <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha. ', 'whiteAlpha.200')}
           p={3}
+          mt={3}
           mb={6}
           align="center"
         >
           🚀 Frontend Developer | 💻 UI/UX Enthusiast
         </Box>
-        <Box display={{ md: 'flex' }}>
+        <Box display={{ md: 'flex', lg: 'flex', xl: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Portfolio
@@ -51,7 +54,7 @@ const Page = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              maxWidth={{ base: '100%', md: '100px', lg: '150px', xl: '200px' }}
               display="inline-block"
               borderRadius="full"
               src="/images/profile.png"
@@ -72,10 +75,6 @@ const Page = () => {
             My journey in web development began 3 years ago, and since then,
             I've had the privilege of working on diverse projects. I thrive on
             challenges and am always eager to learn new tools and techniques.
-          </Paragraph>
-          <Paragraph fontSize="md" mb={4}>
-            🎓 Graduated with a degree in [Your Degree] | 📍 Based in [Your
-            Location]
           </Paragraph>
           <Paragraph fontSize="md" mb={4}>
             When I'm not coding, you can find me exploring the latest design

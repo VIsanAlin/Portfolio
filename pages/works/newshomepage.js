@@ -1,4 +1,12 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  SimpleGrid,
+  ListItem
+} from '@chakra-ui/react'
+import Section from '../../components/section'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -7,7 +15,9 @@ import Layout from '../../components/layouts/article'
 const Work = () => {
   return (
     <Layout title="News Homepage">
-      <Container>
+      <Container
+        maxW={{ base: 'container.md', md: 'container.lg', lg: 'container.xl' }}
+      >
         <Title>
           News Homepage <Badge>2023</Badge>
         </Title>
@@ -26,26 +36,30 @@ const Work = () => {
         </P>
 
         <List ml={4} my={4}>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Source Code</Meta>
             <Link href="https://github.com/VIsanAlin/NewsHomepage/tree/main/news-homepage-main">
               https://github.com/VIsanAlin/NewsHomepage/tree/main/news-homepage-main{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Platform</Meta>
             <span>Mobile/Display</span>
           </ListItem>
-          <ListItem>
+          <ListItem my={4}>
             <Meta>Stack</Meta>
             <span>HTML/CSS</span>
           </ListItem>
         </List>
-        <WorkImage
-          src="/images/projects/thumbnailNewsHomepage.jpg"
-          alt="News Homepage"
-        />
+        <SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
+          <Section>
+            <WorkImage
+              src="/images/projects/thumbnailNewsHomepage.jpg"
+              alt="News Homepage"
+            />
+          </Section>
+        </SimpleGrid>
       </Container>
     </Layout>
   )
